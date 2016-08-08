@@ -7,11 +7,16 @@
 # Imports
 
 # Body
-
+def words_twenty_char():
+    fin = open('words.txt')
+    for line in fin:
+        word = line.strip()
+        if len(word) > 20:
+            print(word)
 
 ##############################################################################
 def main():
-    pass  # Call your functions here.
+    words_twenty_char()
 
 if __name__ == '__main__':
     main()
